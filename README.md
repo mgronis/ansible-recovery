@@ -1,2 +1,5 @@
 # speed-recovery
-Bash scripts to help with a speedier recovery when reinstalling or geting up to speed with a newly installed OS
+Ansible based recovery to be used with new OS installations
+
+example:
+ansible-playbook main.yml -b --become-method=su -K -e "user=<your user>" 

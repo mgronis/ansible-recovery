@@ -1,0 +1,8 @@
+---
+- hosts: 127.0.0.1 
+  tasks:
+   - name: Install tmux
+     dnf: pkg=tmux state=present
+
+   - name: Add tmux config
+     copy: src=../files/tmux.conf dest=/home/{{ user }}/.tmux.conf owner={{ user }} group={{ user }} mode=664

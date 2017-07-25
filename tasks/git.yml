@@ -1,0 +1,6 @@
+---
+- hosts: 127.0.0.1
+  tasks:
+  - name: Add gitconfig to home directory
+    #copy: src=../files/gitconfig dest=/home/{{ '{{' }} user {{ '}}' }}/.gitconfig owner={{ '{{' }} user {{ '}}' }} group={{ '{{' }}  user {{ '}}' }}
+    copy: src=../files/gitconfig dest=/home/{{ user }}/.gitconfig owner={{ user }} group={{ user }} mode=664
