@@ -1,4 +1,4 @@
-# speed-recovery
+# ansible-recovery
 Ansible based recovery to be used with new OS installations
 
 example:
