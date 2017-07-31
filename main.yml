@@ -8,4 +8,4 @@
 - include: tasks/elixir.yml
 - include: tasks/docker.yml
 - include: tasks/openjdk.yml
-  #- include: tasks/google-chrome.yml
+- include: tasks/google-chrome.yml
