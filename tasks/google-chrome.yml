@@ -1,0 +1,8 @@
+---
+- hosts: 127.0.0.1
+  tasks:
+  - name: Install google-chrome repo
+    copy: src=../files/google-chrome.repo dest=/etc/yum.repos.d/google-chrome.repo
+
+  - name: Install google-chrome
+    dnf: pkg=google-chrome-stable state=present
