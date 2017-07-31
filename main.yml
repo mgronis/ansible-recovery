@@ -7,3 +7,4 @@
 - include: tasks/erlang.yml
 - include: tasks/elixir.yml
 - include: tasks/docker.yml
+- include: tasks/openjdk.yml

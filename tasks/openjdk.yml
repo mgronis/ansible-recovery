@@ -1,0 +1,5 @@
+---
+- hosts: 127.0.0.1 
+  tasks:
+   - name: Install openJDK 1.8
+     dnf: pkg=java-1.8.0-openjdk-devel state=present
