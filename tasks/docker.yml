@@ -1,0 +1,11 @@
+---
+- hosts: 127.0.0.1
+  tasks:
+   - name: Install docker
+     dnf: pkg=docker state=present
+
+   - name: Create docker user group
+     group: name=docker state=present
+
+   - name: Add user to docker group
+     user: name={{ user }} group=docker append=yes

@@ -6,3 +6,4 @@
 - include: tasks/tree.yml
 - include: tasks/erlang.yml
 - include: tasks/elixir.yml
+- include: tasks/docker.yml
