@@ -9,3 +9,5 @@
 - include: tasks/docker.yml
 - include: tasks/openjdk.yml
 - include: tasks/google-chrome.yml
+- include: tasks/lshw.yml
+- include: tasks/gimp.yml
