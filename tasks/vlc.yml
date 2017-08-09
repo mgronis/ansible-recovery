@@ -1,0 +1,6 @@
+---
+- hosts: 127.0.0.1 
+  tasks:
+   - name: Install vlc
+     dnf: pkg=vlc state=present
+     when: rpm_fusion|success

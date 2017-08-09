@@ -11,3 +11,5 @@
 - include: tasks/google-chrome.yml
 - include: tasks/lshw.yml
 - include: tasks/gimp.yml
+- include: tasks/rpm_fusion_repo.yml
+- include: tasks/vlc.yml

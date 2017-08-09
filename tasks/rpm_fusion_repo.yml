@@ -1,0 +1,6 @@
+---
+- hosts: 127.0.0.1 
+  tasks:
+   - name: Install RPM Fusion repo
+     dnf: pkg=https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-26.noarch.rpm state=present
+     register: rpm_fusion
