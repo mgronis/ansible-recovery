@@ -1,0 +1,4 @@
+---
+- include: tasks/gimp.yml
+- include: tasks/rpm_fusion_repo.yml
+- include: tasks/vlc.yml
