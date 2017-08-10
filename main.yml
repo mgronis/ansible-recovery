@@ -10,3 +10,4 @@
 - include: tasks/openjdk.yml
 - include: tasks/google-chrome.yml
 - include: tasks/lshw.yml
+- include: tasks/mediawriter.yml
