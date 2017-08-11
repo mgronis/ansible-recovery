@@ -1,0 +1,19 @@
+---
+- hosts: 127.0.0.1
+  tasks:
+   - name: Add git promt shell script
+     copy: src=../files/git_prompt.sh dest=/home/{{ user }}/.git_prompt.sh owner={{ user }} group={{ user }} mode=644
+     register: git_prompt_added
+     
+   - name: Add scipt with PS1 change
+     copy: src=../files/bashrc.ps1 dest=/home/{{ user }}/.bashrc.ps1 owner={{ user }} group={{ user }} mode=644
+     register: ps1_added
+
+   - name: Add PS1 changes to .bash_profile
+     lineinfile:
+       state: present
+       dest: /home/{{ user }}/.bashrc
+       line: source ~/.bashrc.ps1
+       regexp: source ~/.bashrc.ps1
+       insertafter: EOF
+     when: git_prompt_added and ps1_added
