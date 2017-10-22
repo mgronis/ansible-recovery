@@ -12,3 +12,4 @@
 - include: tasks/lshw.yml
 - include: tasks/mediawriter.yml
 - include: tasks/bash.yml
+- include: tasks/meld.yml
