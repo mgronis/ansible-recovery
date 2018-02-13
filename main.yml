@@ -13,3 +13,4 @@
 - include: tasks/mediawriter.yml
 - include: tasks/bash.yml
 - include: tasks/meld.yml
+- include: tasks/nmap.yml
