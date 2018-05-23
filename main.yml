@@ -14,3 +14,4 @@
 - include: tasks/bash.yml
 - include: tasks/meld.yml
 - include: tasks/nmap.yml
+- include: tasks/awscli.yml

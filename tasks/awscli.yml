@@ -1,0 +1,5 @@
+---
+- hosts: 127.0.0.1 
+  tasks:
+   - name: Install AWS cli
+     dnf: pkg=awscli state=present
