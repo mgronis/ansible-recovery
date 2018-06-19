@@ -18,3 +18,4 @@
 - import_playbook: tasks/awscli.yml
 - import_playbook: tasks/rpm_fusion_repo.yml
 - import_playbook: tasks/ffmpeg.yml
+- import_playbook: tasks/vlc.yml

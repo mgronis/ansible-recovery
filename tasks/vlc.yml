@@ -3,4 +3,3 @@
   tasks:
    - name: Install vlc
      dnf: pkg=vlc state=present
-     when: rpm_fusion|success
