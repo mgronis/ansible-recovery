@@ -16,3 +16,5 @@
 - include: tasks/meld.yml
 - include: tasks/nmap.yml
 - include: tasks/awscli.yml
+- include: tasks/rpm_fusion_repo.yml
+- include: tasks/ffmpeg.yml

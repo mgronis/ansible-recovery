@@ -1,9 +1,11 @@
 ---
 - hosts: 127.0.0.1 
   tasks:
-   - name: Install RPM Fusion repo
-     dnf: pkg=https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-26.noarch.rpm state=present
-     register: rpm_fusion
+   - name: Install RPM Fusion free repo
+     dnf: pkg=https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ ansible_distribution_version }}.noarch.rpm state=present
 
-     # https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+   - name: Install RPM Fusion nonfree repo
+     dnf: pkg=https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-{{ ansible_distribution_version }}.noarch.rpm state=present
+
+    # https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
      # https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm

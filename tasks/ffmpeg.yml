@@ -1,0 +1,11 @@
+---
+- hosts: 127.0.0.1 
+  tasks:
+   - name: Install ffmpeg
+     dnf: pkg=ffmpeg state=present
+
+   - name: Install ffmpeg-libs
+     dnf: pkg=ffmpeg-libs state=present
+
+   - name: Install gstreamer-ffmpeg
+     dnf: pkg=gstreamer-ffmpeg state=present
