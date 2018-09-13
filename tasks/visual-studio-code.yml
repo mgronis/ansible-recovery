@@ -1,7 +1,8 @@
 ---
 - hosts: 127.0.0.1
   tasks:
-  - rpm_key:
+  - name: Install visual studio code PGP key
+    rpm_key:
       key: https://packages.microsoft.com/keys/microsoft.asc
       state: present
 
