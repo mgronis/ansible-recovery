@@ -22,3 +22,4 @@
 - import_playbook: tasks/python-devel.yml
 - import_playbook: tasks/wavemon.yml
 - import_playbook: tasks/visual-studio-code.yml
+- import_playbook: tasks/imagemagick.yml
