@@ -5,4 +5,4 @@
      dnf: pkg=vim state=present
 
    - name: vim as default editor 
-     dnf: pkg=vim-default-editor state=present
+     dnf: pkg=vim-default-editor state=present allowerasing=yes
